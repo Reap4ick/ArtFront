@@ -1,0 +1,112 @@
+/* Заголовок */
+.cardgrid-main-title {
+    color: rgb(230, 223, 231);
+    font-family: 'Skema Pro Omni', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 38px;
+    text-align: left;
+    width: 392px;
+    height: 38px;
+    margin-bottom: 20px;
+}
+
+/* Текст заголовку картки */
+.cardgrid-title {
+    color: rgb(255, 255, 255);
+    font-family: 'Skema Pro Omni', sans-serif;
+    font-size: 24px; /* Зменшено пропорційно */
+    font-weight: 500;
+    line-height: 30px; /* Зменшено пропорційно */
+    letter-spacing: 0%;
+    margin: 0;
+}
+
+/* Сітка карток */
+.cardgrid-grid {
+    display: flex;
+    gap: 20px; /* Повернуто до 20px */
+    flex-wrap: wrap; /* Дозволяємо карткам переноситися на новий ряд */
+    justify-content: flex-start; /* Вирівнюємо картки зліва */
+}
+
+/* Додатковий відступ для сітки */
+.cardgridMargin {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/* Оформлення картки */
+.card {
+    width: 288.30px; /* Повернуто до попереднього значення */
+    height: 381.27px; /* Повернуто до попереднього значення */
+    flex-shrink: 0;
+    position: relative;
+    background-color: transparent;
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 112, 134);
+    border-radius: 4px;
+    overflow: hidden; /* Змінено на hidden, щоб уникнути появи ліній */
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Вміст картки */
+.cardgrid-text-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px 21px;
+    z-index: 1; /* Додано z-index, щоб текст був над зображенням */
+}
+
+.cardgrid-subtitle {
+    color: rgb(188, 152, 201);
+    font-family: 'Gotham', sans-serif;
+    font-size: 14px; /* Зменшено пропорційно */
+    font-weight: 400;
+    line-height: 20px; /* Зменшено пропорційно */
+    margin: 5px 0 0;
+}
+
+/* Зображення */
+.cardgridImage {
+    position: absolute;
+    bottom: 0px; /* Повернуто до попереднього позиціонування */
+    right: 0px; /* Повернуто до попереднього позиціонування */
+    width: 262px; /* Залишено без змін, але можна пропорційно зменшити */
+    height: 390.05px; /* Залишено без змін, але можна пропорційно зменшити */
+    object-fit: cover;
+    z-index: 0; /* Додано z-index, щоб зображення було під текстом */
+}
+
+/* Блок опису, що з'являється при наведенні */
+.cardgrid-hover-description {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-family: 'Gotham', sans-serif;
+    font-size: 12px; /* Зменшено пропорційно */
+    font-weight: 400;
+    line-height: 18px; /* Зменшено пропорційно */
+    text-align: center;
+    padding: 10px;
+    transition: bottom 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    z-index: 2; /* Додано z-index, щоб опис був над усім */
+}
+
+.card:hover .cardgrid-hover-description {
+    bottom: 0;
+    opacity: 1;
+}
+
+.hidden {
+    display: none;
+}

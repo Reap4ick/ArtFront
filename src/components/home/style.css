@@ -1,0 +1,65 @@
+/* Для анімованого фону */
+
+/* Анімований фон */
+.animated-bg {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; 
+  background: linear-gradient(135deg, #1f2937, #111827); /* Темний градієнт */
+  overflow: hidden;
+}
+
+
+.firefly {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  filter: blur(110px);
+}
+
+.firefly-1 {
+  background: rgba(255, 105, 180, 0.6); 
+  top: 50%;
+  left: 50%;
+  animation: orbit-1 6s linear infinite;
+}
+
+.firefly-2 {
+  background: rgba(0, 255, 200, 0.6); 
+  top: 40%;
+  left: 60%;
+  animation: orbit-2 8s linear infinite;
+}
+
+@keyframes orbit-1 {
+  0% {
+      transform: translate(-50%, -50%) rotate(0deg) translateX(200px) rotate(0deg);
+  }
+  100% {
+      transform: translate(-50%, -50%) rotate(360deg) translateX(200px) rotate(-360deg);
+  }
+}
+
+@keyframes orbit-2 {
+  0% {
+      transform: translate(-70%, -70%) rotate(0deg) translateX(300px) rotate(0deg);
+  }
+  100% {
+      transform: translate(-70%, -70%) rotate(-360deg) translateX(300px) rotate(360deg);
+  }
+}
+
+/* Основний контейнер */
+body, html, #root {
+  height: 100%; 
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  position: relative; 
+}

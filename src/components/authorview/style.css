@@ -1,0 +1,249 @@
+
+
+.painting-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #080217;
+    color: #e6dfe7;
+    font-family: "Gotham", sans-serif;
+  }
+  
+  .title {
+    position: absolute;
+    left: 840px;
+    top: 156px;
+    color: #ff7086;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 38px;
+  }
+  
+  .author {
+    position: absolute;
+    left: 840px;
+    top: 206px;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+  
+  .details {
+    position: absolute;
+    left: 840px;
+    top: 246px;
+    display: flex;
+    gap: 44px;
+  }
+  
+  .labels,
+  .values {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 35px;
+  }
+  
+  .values {
+    color: #bc98c9;
+  }
+  
+  .price {
+    position: absolute;
+    left: 840px;
+    top: 480px;
+    color: #ff7086;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .edit-button {
+    position: absolute;
+    left: 840px;
+    top: 520px;
+    background: #e6dfe7;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .button-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .button-icon {
+    width: 16px;
+    height: 16px;
+    background: rgba(0, 0, 0, 0.88);
+    border: 1px solid #080217;
+  }
+  
+  .button-text {
+    color: #080217;
+    font-size: 18px;
+    font-family: "Fixel Display", sans-serif;
+  }
+  
+  .info-section {
+    position: absolute;
+    left: 70px;
+    top: 156px;
+  }
+  
+  .section {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e6dfe7;
+    padding-bottom: 12px;
+  }
+  
+  .section-header h3 {
+    color: white;
+    font-size: 20px;
+  }
+  
+  .section-content p {
+    color: #e6dfe7;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .author-info {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .author-photo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+  }
+  
+  .author-name {
+    color: #e6dfe7;
+    font-size: 16px;
+  }
+  
+  .author-birth {
+    color: #bc98c9;
+    font-size: 14px;
+  }
+  
+  
+  .textt{
+    align-self: stretch;
+    color: var(--base-Platinum, #E6DFE7);
+    font-family: "Skema Pro Omni";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px; /* 126.667% */
+  }
+  
+  .otherwork{
+    display: flex;
+    width: 1300px;
+    max-width: 1300px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .otherworkwork{
+    display: flex;
+    align-items: center;
+    gap: 47px;
+  }
+
+
+
+
+
+
+
+
+
+
+  .custom-accordion > .ant-collapse-item > .ant-collapse-header {
+    display: flex;
+    justify-content: space-between; /* Текст зліва, стрілка справа */
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(230, 223, 231);
+    font-family: Gotham, sans-serif;
+    line-height: 24px;
+    text-align: left;
+    padding: 12px 16px; /* Відступи для зручного кліку */
+    background-color: transparent; /* Прозорий фон для заголовка */
+    cursor: pointer; /* Вказівник при наведенні */
+  }
+  
+  .custom-accordion > .ant-collapse-item > .ant-collapse-header:hover {
+    background-color: rgba(230, 223, 231, 0.1); /* Фон при наведенні */
+  }
+  
+  .custom-accordion > .ant-collapse-item.ant-collapse-item-active > .ant-collapse-header {
+    background-color: rgba(188, 152, 201, 0.2); /* Фон активного елемента */
+  }
+  
+  .custom-accordion > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow {
+    margin-left: auto; /* Відсуваємо стрілку вправо */
+    color: rgb(230, 223, 231); /* Колір стрілки */
+    transform: scale(1.2); /* Збільшення стрілки для кращої видимості */
+  }
+  
+  .custom-accordion .ant-collapse-content {
+    border: none; /* Видалення рамок у контенті */
+    background-color: transparent; /* Прозорий фон для контенту */
+  }
+  
+  .custom-accordion .ant-collapse-content > .ant-collapse-content-box {
+    padding: 12px 16px; /* Відступи для контенту */
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(230, 223, 231);
+    background-color: rgba(230, 223, 231, 0.05); /* Легкий фон для контенту */
+  }
+  
+  .custom-accordion {
+    width: 100%; /* Займає весь доступний простір */
+  }
+  
+  .custom-accordion > .ant-collapse-item {
+    border-bottom: 1px solid rgb(230, 223, 231); /* Лінія між елементами */
+  }
+  
+  .custom-accordion > .ant-collapse-item:last-child {
+    border-bottom: none; /* Прибираємо нижню лінію в останньому елементі */
+    border-radius: 0; /* Прибираємо заокруглення */
+  }
+
+
+  .custom-accordion > .ant-collapse-item:last-child > .ant-collapse-header {
+    border-radius: 0; /* Прибираємо заокруглення */
+  }
+  
+  .custom-accordion > .ant-collapse-item:last-child {
+    border-bottom: none; /* Прибираємо нижню лінію для останнього елемента */
+    border-radius: 0; /* Прибираємо заокруглення контейнера */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

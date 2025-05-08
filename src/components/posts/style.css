@@ -1,0 +1,74 @@
+/* Загальний стиль сторінки */
+body {
+  background: rgb(8, 2, 23); /* Темний фон */
+  color: white; /* Білий текст */
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app-container {
+  /* height: 100vh; Висота вікна */
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Елементи розташовуються вертикально */
+  align-items: flex-start;
+  
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Відстань між елементами */
+  margin-bottom: 20px;
+}
+
+.breadcrumb .ant-breadcrumb-link,
+.breadcrumb .ant-breadcrumb-separator {
+  color: white;
+}
+
+.breadcrumb span {
+  color: white;
+}
+
+.breadcrumb .ant-breadcrumb-item:hover {
+  text-decoration: underline;
+}
+
+/* Wrapper для фільтра і лінії */
+.filter-wrapper {
+  display: flex;
+  align-items: flex-start; /* Вирівнювання по верхньому краю */
+  margin-top: 45px;
+}
+
+/* Фільтр */
+.filter-container {
+  flex-grow: 1; /* Фільтр займає весь доступний простір */
+}
+
+/* Вертикальна лінія */
+.vertical-line {
+  width: 1px; /* Ширина лінії * app/
+  height: 100%; /* Висота лінії */
+  background-color: #ccc; /* Світло-сірий колір лінії */
+  margin-left: 20px; /* Відступ між фільтром і лінією -*/
+}
+
+
+.whtnew{
+
+  /* base/h2 */
+  color: rgb(230, 223, 231);
+  font-family: Skema Pro Omni;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 0%;
+  text-align: center;
+
+  width: 100%; /* Забезпечує повну ширину */
+  text-align: center; /* Центрує текст всередині */
+
+}

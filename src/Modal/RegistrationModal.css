@@ -1,0 +1,130 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  position: relative;
+  width: 544px;
+  height: 328px;
+  background: #E6DFE7;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.close-button {
+  position: absolute;
+  left: 500px;
+  top: 12px;
+  width: 32px;
+  height: 32px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.close-button:hover svg path {
+  fill: #410C55;
+  transition: fill 0.3s;
+}
+
+.palette-icon {
+  position: absolute;
+  left: 18px;
+  top: 24px;
+  width: 90px;
+  height: 90px;
+}
+
+.main-text {
+  position: absolute;
+  left: 119px;
+  top: 28px;
+  width: 382px;
+  height: 76px;
+  font-family: 'Skema Pro Omni', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: -0.04em;
+  color: #080217;
+}
+
+.sub-text {
+  position: absolute;
+  left: 119px;
+  top: 104px;
+  width: 382px;
+  height: 120px;
+  font-family: 'Gotham', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #080217;
+}
+
+.sub-text .highlight {
+  color: #410c55;
+}
+
+.button-container {
+  position: absolute;
+  left: 23px;
+  top: 252px;
+  display: flex;
+  gap: 18px;
+}
+
+.register-button {
+  width: 240px;
+  height: 41.3px;
+  background: #080217;
+  border: 1.29064px solid #BC98C9;
+  box-shadow: 0px 2.58128px 0px rgba(0, 0, 0, 0.02);
+  border-radius: 5.16256px;
+  font-family: 'Fixel Display', sans-serif;
+  font-weight: 400;
+  font-size: 18.0689px;
+  line-height: 28px;
+  color: #E6DFE7;
+  cursor: pointer;
+  padding: 0 19.3596px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-button:hover {
+  opacity: 0.9;
+  transition: opacity 0.3s;
+}
+
+.login-button {
+  width: 240px;
+  height: 41.3px;
+  border: 1.29064px solid #080217;
+  box-shadow: 0px 2.58128px 0px rgba(0, 0, 0, 0.02);
+  border-radius: 5.16256px;
+  font-family: 'Fixel Display', sans-serif;
+  font-weight: 400;
+  font-size: 18.0689px;
+  line-height: 28px;
+  color: #080217;
+  background: transparent;
+  cursor: pointer;
+  padding: 0 19.3596px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-button:hover {
+  background: #f0f0f0;
+  transition: background 0.3s;
+}

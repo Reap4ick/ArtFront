@@ -1,0 +1,299 @@
+.filter-container {
+  width: 292px;
+  border-right: 2px solid white;
+  padding-right: 10px;
+}
+
+.custom-collapse .ant-collapse-item {
+  border: none;
+}
+
+.custom-collapse > .ant-collapse-item > .ant-collapse-header {
+  border-top: 1px solid rgb(230, 223, 231);
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(230, 223, 231);
+  font-family: Gotham, sans-serif;
+  line-height: 24px;
+  text-align: left;
+}
+
+.custom-collapse > .ant-collapse-item > .ant-collapse-header:last-child {
+  border-bottom: none;
+}
+
+.custom-collapse > .ant-collapse-item .ant-collapse-header .ant-collapse-arrow {
+  right: 10px !important;
+  color: rgb(230, 223, 231);
+}
+
+.ant-collapse-content {
+  border-top: none;
+}
+
+.ant-select {
+  width: 100%;
+  background: transparent;
+  border: 1px solid rgb(188, 152, 201);
+  border-radius: 6px;
+}
+
+.select-inline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+}
+
+.select-inline .select-label {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(230, 223, 231);
+  font-family: Gotham, sans-serif;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.ant-select .ant-select-selector {
+  background-color: transparent !important;
+  border: 1px solid rgb(188, 152, 201);
+  border-radius: 6px;
+  box-shadow: none !important;
+  font-family: Gotham, sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 22px !important;
+  letter-spacing: 0% !important;
+  color: rgb(188, 152, 201) !important;
+}
+
+.ant-select-dropdown {
+  background-color: #ffffff !important;
+}
+
+.ant-select-item-option {
+  color: rgb(188, 152, 201) !important;
+  font-family: Gotham, sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 22px !important;
+  letter-spacing: 0% !important;
+  text-align: left !important;
+}
+
+.ant-select-selector {
+  background-color: transparent !important;
+  border: 1px solid rgb(188, 152, 201);
+  border-radius: 6px;
+  box-shadow: none !important;
+}
+
+.ant-select-arrow {
+  color: rgb(188, 152, 201);
+}
+
+.ant-input {
+  width: 106px;
+  height: 32px;
+  border: 1px solid #BC98C9;
+  border-radius: 6px;
+  background-color: rgb(230, 223, 231);
+  color: #E6DFE7;
+  padding: 4px 0;
+}
+
+.ant-input-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.ant-input-prefix {
+  width: 25px;
+  height: 22px;
+  font-family: 'Gotham', sans-serif;
+  font-size: 14px;
+  color: #BC98C9;
+}
+
+.ant-input-suffix {
+  display: none;
+}
+
+.ant-input > input {
+  width: 51px;
+  height: 22px;
+  font-family: 'Gotham', sans-serif;
+  font-size: 14px;
+  color: #E6DFE7;
+}
+
+.checkbox-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ant-checkbox-group .ant-checkbox-wrapper {
+  margin-bottom: 10px;
+}
+
+.price-inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.price-inputs input {
+  width: 45%;
+  padding: 5px;
+  border: 1px solid rgb(188, 152, 201);
+  border-radius: 6px;
+}
+
+.price-labels {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.MM {
+  margin-right: -5px;
+  color: rgb(188, 152, 201);
+  font-family: Gotham, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  white-space: nowrap;
+}
+
+.price-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  border: 1px solid rgb(188, 152, 201);
+  border-radius: 6px;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+}
+
+.price-input {
+  width: 80px;
+  background-color: transparent !important;
+  color: white !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  font-family: Gotham, sans-serif;
+  font-size: 16px;
+  text-align: right;
+  padding: 0;
+}
+
+.price-input:hover,
+.price-input:focus,
+.price-input:active {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.price-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+
+.ant-checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: white;
+}
+
+.ant-checkbox-inner {
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgb(188, 152, 201) !important;
+  background-color: transparent !important;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.ant-checkbox:hover .ant-checkbox-inner {
+  border-color: rgb(188, 152, 201);
+  background-color: transparent !important;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  border-color: rgb(188, 152, 201);
+  background-color: transparent !important;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+}
+
+.ant-checkbox-input {
+  opacity: 0;
+}
+
+.ant-checkbox-input:focus {
+  outline: none !important;
+}
+
+.form-control {
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Контейнер для кнопки "Очистити фільтр" */
+.reset-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Стилі для кнопки "Очистити фільтр" */
+.reset-filter-button {
+  background: transparent !important;
+  border: 1px solid #ff7086 !important;
+  color: #ff7086 !important;
+  font-family: "Gotham", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.reset-filter-button:hover,
+.reset-filter-button:active {
+  background: #ff7086 !important;
+  color: #e6dfe7 !important;
+  border: 1px solid #ff7086 !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.reset-filter-button:focus {
+  background: transparent !important;
+  color: #ff7086 !important;
+  border: 1px solid #ff7086 !important;
+  box-shadow: none !important;
+  outline: none !important;
+}

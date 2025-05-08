@@ -1,0 +1,220 @@
+.cards-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.cards-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px; /* Збільшено відстань між картками до 30px */
+  width: 100%; /* Змінено з 80% на 100% для використання всього доступного простору */
+  max-width: 840px; /* 3 картки по 250px + 2 відступи по 30px = 810px + запас */
+}
+
+.card {
+  position: relative;
+  width: 250px;
+  height: 330px;
+  border: 1px solid #e6dfe7;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: transparent;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+  width: 100%;
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px 8px 0 0;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .card-image {
+  transform: scale(1.1);
+}
+
+.card-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px 10px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.card-title {
+  font-family: "Gotham", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #ff7086;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-description {
+  font-family: "Gotham", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #bc98c8;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 60px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.card-price {
+  font-family: "Gotham", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #e6dfe7;
+}
+
+.like-container {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.like-container:hover .heart-stroke {
+  stroke: #ff7086;
+}
+
+.likes-count {
+  color: #e6dfe7;
+  font-size: 14px;
+}
+
+.heart-stroke {
+  fill: transparent;
+  stroke: #e6dfe7;
+  stroke-width: 1px;
+}
+
+.heart-fill {
+  stroke: transparent;
+  transition: fill 0.2s ease;
+}
+
+.filter-container {
+  flex: 0 0 250px;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.ant-pagination {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  background: transparent !important;
+}
+
+.ant-pagination-item {
+  box-sizing: border-box !important;
+  border: none !important;
+  background: transparent !important;
+  color: white !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 32px;
+  height: 32px;
+  cursor: pointer !important;
+  font-size: 14px !important;
+}
+
+.ant-pagination-item:hover {
+  border-color: rgb(255, 112, 134) !important;
+}
+
+.ant-pagination-item-active {
+  box-sizing: border-box !important;
+  border: 1px solid rgb(255, 112, 134) !important;
+  background: transparent !important;
+  font-weight: bold !important;
+}
+
+.ant-pagination-item a {
+  color: white !important;
+}
+
+.ant-pagination-item-active > a {
+  color: rgb(255, 112, 134) !important;
+  font-weight: bold !important;
+}
+
+.ant-pagination-prev,
+.ant-pagination-next {
+  border: none !important;
+  background: transparent !important;
+  color: white !important;
+}
+
+.ant-pagination-prev .pagination-arrow,
+.ant-pagination-next .pagination-arrow {
+  font-size: 16px !important;
+  color: white !important;
+}
+
+.ant-pagination-item-ellipsis {
+  color: white !important;
+}
+
+/* Адаптивність для менших екранів */
+@media (max-width: 900px) {
+  .cards-list {
+    grid-template-columns: repeat(2, 1fr); /* 2 картки в ряд */
+    max-width: 560px; /* 2 × 250px + 1 × 30px + запас */
+  }
+}
+
+@media (max-width: 600px) {
+  .cards-list {
+    grid-template-columns: 1fr; /* 1 картка в ряд */
+    max-width: 280px; /* 250px + запас */
+  }
+}
